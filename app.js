@@ -15,6 +15,7 @@ mongoose.connect("mongodb+srv://mmx10d:MjJxrCvUwsRuPZI1@cluster0.gspmy.mongodb.n
 
 const Schema = new mongoose.Schema({
   id: Number,
+  username: String,
   content: String
 });
 
