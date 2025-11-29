@@ -23,6 +23,7 @@ const message = mongoose.model("message", Schema);
 app.post("/messages", async (req, res) => {
   const NewMessage = message({
     id: req.body.id,
+    username: req.body.username,
     content: req.body.content
   });
 
