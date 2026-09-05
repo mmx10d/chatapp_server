@@ -7,7 +7,10 @@ app.use(cors({
   origin: "*",
   methods: ["GET", "POST"]
 }));
-mongoose.connect("mongodb+srv://mmx10d:MjJxrCvUwsRuPZI1@cluster0.gspmy.mongodb.net/")
+// add database link
+// as
+// mongodb+srv://username:password@cluster0.gspmy.mongodb.net/
+mongoose.connect("")
   .then(() => {
     console.log("Mongodb Connected ✔")
   })
